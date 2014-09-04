@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>Javascript Phone Number Challenge</title>
+		<style>
+			h1, h2, h3, p {
+				line-height: 24px;
+				letter-spacing: .5px;
+				font-family: sans-serif;
+			}
+		</style>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	</head>
+	<body>
+		<div class="wrapper" style="width: 40%; float: left">
+			<div style="max-width: 400px; margin: 60px auto; padding: 10px;">
+				<label>Enter a phone number:</label>
+				<br><br>
+				<input type="text" id="input"></body>
+				<button id="submit">Submit</button>
+
+				<br><br>
+				<label>Result:</label>
+
+				<h2 id="output" style="color: blue;"></h2>
+
+				<br><br>
+			</div>
+		</div>
+		<div class="wrapper" style="width: 60%; float: left">
+			<div style="max-width: 400px; margin: 60px auto; padding: 10px;">
+				<h2>Javascript Phone Number Challenge</h2>
+				<p>Ok, here's the challenge</p>
+				<p>Below is an input box. In that input, a user types in a phone number.</p>
+				<p>Upon selecting [submit], the program should show the 'formatted' phone number</p>
+
+				<br>
+
+				<h3>Examples</h3>
+				<p>For example:</p>
+				<p>6172324567 should produce : 1 (617)-232-4567 </p>
+				<p>19176768311 should produce : 1 (917)-676-8311 </p>
+
+				<br>
+				<p>Don't forget international numbers:</p>
+				<p>176172324567 should produce : 17 (617)-232-4567 </p>
+				<p>39176768311 should produce : 3 (917)-676-8311 </p>
+
+				<br>
+
+				<p>As a developer, these types of problems are our bread and butter. The primary goal of this challenge is for you to learn the rudimentary basics of javascript in the hopes that it will allow you to better relate and communicate to developers. Good luck.</p>
+			</div>
+		</div>
+	</body>
+	<script>
+		/*
+			JAVASCRIPT CODE GOES HERE
+			USE THE LINES BELOW TO ADD LOGIC
+
+			the following code should:
+			a.) Grab the value of the input
+			b.) Format the input value into a readable phone number
+			c.) Display the output value in the #output <h2> tag
+		*/
+
+		$( "#submit" ).on( "click", function() {
+  			// alert('The Submit button has been clicked');
+  			var input = $('#input')[0].value;
+
+  			alert('user entered: ' + input)
+		});
+	</script>
+</html>
